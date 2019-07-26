@@ -7,6 +7,14 @@ public class Human {
     private String name;
     private Date birthday;
 
+    public Human() {
+    }
+
+    public Human(String name, Date birthday) {
+        this.name = name;
+        this.birthday = birthday;
+    }
+
     public String getName() {
         return this.name;
     }
