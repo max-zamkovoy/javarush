@@ -1,6 +1,5 @@
 package com.stancialeta.task.task01;
 
-import java.util.Date;
 
 public class Solution {
     /*
@@ -12,8 +11,7 @@ public class Solution {
     * */
 
     public static void main(String[] args) {
-        Human human = new Human("Vasya", new Date()); //TODO
         Report humanReport = new HumanReport();
-        humanReport.create(human);
+        humanReport.create();
     }
 }
