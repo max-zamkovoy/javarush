@@ -33,7 +33,9 @@ public class HumanReport implements Report {
     public Human readHumanPersonalInfoFromConsole() {
         Human human = new Human();
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            System.out.println("Enter name");
             String name = reader.readLine();
+            System.out.println("Enter birthday");
             Date birthday = DateUtils.getDate(Integer.valueOf(reader.readLine()));
             human.setName(name);
             human.setBirthday(birthday);
